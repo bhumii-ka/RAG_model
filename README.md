@@ -20,6 +20,7 @@ This project is a web-based application that processes user queries to retrieve 
    
 3. **Answer Generation**: 
     - The summarized content is passed to the **LLaMA** model to generate a response to the user's query.
+    - The model is being accessed through local tunneling at the port where local host is running the model on local machine through flask
    
 4. **Classification and Evidence**: 
     - The generated answer is classified based on question type.
@@ -48,11 +49,12 @@ This project is a web-based application that processes user queries to retrieve 
     pip install -r requirements.txt
     ```
 
-3. Run the Gradio web app:
+3. Run the Flask app
     ```bash
     python app.py
     ```
-
+    Note: The app.py file is not provided as it contains our confidential API-key.
+   
 4. Access the app locally:
     - The app will be available at `http://localhost:7860`.
 
@@ -72,7 +74,7 @@ This project is a web-based application that processes user queries to retrieve 
 - **LLaMA**: Large language model used for natural language understanding and answer generation.
 - **SentenceTransformer**: Used for encoding queries and documents to vectors for semantic similarity.
 - **Gradio**: Simplified web interface for machine learning applications.
-
+- **Flask**: Hosting the Llama model on local host from local machine
 
 
 
