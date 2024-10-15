@@ -1,6 +1,6 @@
-# Research Query Processor
+# Hog RAGger
 
-This project is a web-based application that processes research queries to retrieve relevant documents, generate concise answers, classify question types, and provide evidence for the answer. The application integrates a pre-trained LLaMA model for generating answers and FAISS for document retrieval. The app is built using **Gradio** for the user interface.
+This project is a web-based application that processes user queries to retrieve relevant documents from the corpus, generate concise answers, classify question types, and provide evidence for the answer. The application integrates a pre-trained LLaMA model for generating answers and FAISS for document retrieval. The app is built using **Gradio** for the user interface.
 
 ## Features
 
